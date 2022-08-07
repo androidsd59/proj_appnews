@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/favorites_open"
+        android:orderInCategory="1"
+        android:title="@string/favorites_go_to"
+        />
+    <item
+        android:id="@+id/favorites_add_art"
+        android:orderInCategory="1"
+        android:title="@string/favorites_add_to"
+        />
+
+</menu>

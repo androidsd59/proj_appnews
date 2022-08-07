@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Новости v.0.048</string>
+    <string name="register">РЕГИСТРАЦИЯ</string>
+    <string name="auth">АВТОРИЗАЦИЯ</string>
+
+    <string name="list_news">Список новостей</string>
+    <string name="request_news">ПОЛУЧИТЬ НОВОСТИ</string>
+    <string name="update_news">ОБНОВИТЬ НОВОСТИ</string>
+
+    <string name="show_article">Просмотр статьи</string>
+
+    <string name="sa_source">Источник</string>
+    <string name="sa_source_id">Id Источника</string>
+    <string name="sa_source_name">Имя Источника</string>
+    <string name="sa_author">Автор</string>
+    <string name="sa_title">Заголовок</string>
+    <string name="sa_description">Описание</string>
+    <string name="sa_url">Адрес статьи</string>
+    <string name="sa_urlToImage">Адрес изображения</string>
+    <string name="sa_publishedAt">Дата публикации</string>
+    <string name="sa_content">Содержание</string>
+
+    <string name="sa_image_not_load">Исключение !  Не загружено изображение</string>
+
+    <string name="sa_no_default_network">"В настоящее время нет активных сетей по умолчанию"</string>
+    <string name="sa_network_is_not_connected">"Сеть не подключена"</string>
+    <string name="sa_network_not_available">"Сеть недоступна"</string>
+    <string name="sa_network_OK">"Сеть в порядке"</string>
+
+    <string name="favorites">Избранное</string>
+    <string name="favorites_add_to">Добавить в избранное</string>
+    <string name="favorites_remove_from">Удалить из избранного</string>
+    <string name="favorites_go_to">Перейти в избранное</string>
+    <string name="favorites_message_item_not_release">Этот пункт меню еще не реализован</string>
+    <string name="favorites_message_function_not_release">Эта функция ещё не реализована</string>
+    <string name="favorites_items_found">Найдено элементов: </string>
+
+    <string name="favorite_article_delete">Удаление статьи</string>
+
+    <string name="exception_sqlite">Exception SQLite. Статья в БД не добавлена.</string>
+</resources>

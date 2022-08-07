@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:visibility="visible">  <!-- android:layout_marginTop="?attr/actionBarSize" -->
+    <!--
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        tools:context=".ui.ShowArticleActivity">
+
+        <!--
+              {   "source":       { "id": "techcrunch", "name": "TechCrunch" },
+                  "author":       "Anna Heim",
+                  "title":        "Stocks with friends",
+                  "description":  "Several startups want to make it easier and friendlier for individuals to buy stocks. But isn't pandemic-era stock picking just a bad habit that'd better be left behind?",
+                  "url":          "https://techcrunch.com/2022/07/30/stocks-with-friends/",
+                  "urlToImage":   "https://techcrunch.com/wp-content/uploads/2020/06/NSussman_Techcrunch_Exchange-multicolor.jpg?w=533",
+                  "publishedAt":  "2022-07-30T14:00:43Z",
+                  "content":      "Welcome to The TechCrunch Exchange, a weekly startups-and-markets newsletter. Its inspired by the daily TechCrunch+ column where it gets its name. Want it in your inbox every Saturday? Sign up here.\r… [+440 chars]"
+              }
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    -->
+
+
+        <!--
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scrollbars="vertical">
+-->
+
+        <TextView
+            android:id="@+id/tV_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sa_source"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="25dp" />
+
+        <TextView
+            android:id="@+id/tV_source_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="source id"
+            android:text="@string/sa_source_id"
+            app:layout_constraintStart_toStartOf="@+id/tV_source"
+            app:layout_constraintTop_toBottomOf="@+id/tV_source"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tV_source_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="source name"
+            android:text="@string/sa_source_name"
+            app:layout_constraintStart_toStartOf="@+id/tV_source_id"
+            app:layout_constraintTop_toBottomOf="@+id/tV_source_id"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tV_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sa_author"
+            app:layout_constraintStart_toStartOf="@+id/tV_source"
+            app:layout_constraintTop_toBottomOf="@+id/tV_source_name"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tV_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sa_title"
+            app:layout_constraintStart_toStartOf="@+id/tV_author"
+            app:layout_constraintTop_toBottomOf="@+id/tV_author_value"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tV_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sa_description"
+            app:layout_constraintStart_toStartOf="@+id/tV_title"
+            app:layout_constraintTop_toBottomOf="@+id/tV_title_value"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tV_url_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sa_url"
+            app:layout_constraintStart_toStartOf="@+id/tV_description"
+            app:layout_constraintTop_toBottomOf="@+id/tV_description_value"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tV_urlToImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sa_urlToImage"
+            app:layout_constraintStart_toStartOf="@+id/tV_url_source"
+            app:layout_constraintTop_toBottomOf="@+id/tV_url_source_value"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tV_publishedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sa_publishedAt"
+            app:layout_constraintStart_toStartOf="@+id/tV_urlToImage"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+        <!--
+            app:layout_constraintStart_toStartOf="@+id/tV_urlToImage"
+            app:layout_constraintTop_toBottomOf="@+id/tV_urlToImage_value"
+        -->
+
+        <TextView
+            android:id="@+id/tV_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sa_content"
+            app:layout_constraintStart_toStartOf="@+id/tV_publishedAt"
+            app:layout_constraintTop_toBottomOf="@+id/tV_publishedAt_value"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tV_author_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="author"
+            app:layout_constraintStart_toStartOf="@+id/tV_author"
+            app:layout_constraintTop_toBottomOf="@+id/tV_author" />
+
+        <TextView
+            android:id="@+id/tV_title_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tV_title"
+            app:layout_constraintTop_toBottomOf="@+id/tV_title" />
+
+        <TextView
+            android:id="@+id/tV_description_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="description"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tV_description"
+            app:layout_constraintTop_toBottomOf="@+id/tV_description" />
+
+        <TextView
+            android:id="@+id/tV_url_source_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="url"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tV_url_source"
+            app:layout_constraintTop_toBottomOf="@+id/tV_url_source" />
+
+        <TextView
+            android:id="@+id/tV_urlToImage_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="url image"
+            app:layout_constraintStart_toStartOf="@+id/tV_urlToImage"
+            app:layout_constraintTop_toBottomOf="@+id/tV_urlToImage" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitStart"
+            app:layout_constraintStart_toStartOf="@+id/tV_urlToImage_value"
+            app:layout_constraintTop_toBottomOf="@+id/tV_urlToImage_value"
+            tools:ignore="MissingConstraints"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tV_publishedAt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="published"
+            app:layout_constraintStart_toStartOf="@+id/tV_publishedAt"
+            app:layout_constraintTop_toBottomOf="@+id/tV_publishedAt" />
+
+        <TextView
+            android:id="@+id/tV_content_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tV_content"
+            app:layout_constraintTop_toBottomOf="@+id/tV_content" />
+
+        <TextView
+            android:id="@+id/tV_empty"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:text="  "
+            app:layout_constraintStart_toStartOf="@+id/tV_content_value"
+            app:layout_constraintTop_toBottomOf="@+id/tV_content_value"
+            tools:ignore="MissingConstraints" />
+
+
+        <!--
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tV_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="299dp"
+        tools:ignore="MissingConstraints" />
+
+        </android.support.constraint.ConstraintLayout>
+        -->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">AppNews v.0.048</string>
+    <string name="register">REGISTRATION</string>
+    <string name="auth">AUTHERISATIOIN</string>
+
+    <string name="list_news">List news</string>
+    <string name="request_news">REQUEST NEWS</string>
+    <string name="update_news">UPDATE NEWS</string>
+
+    <string name="show_article">Show article</string>
+
+    <string name="sa_source">Source</string>
+    <string name="sa_source_id">Source Id</string>
+    <string name="sa_source_name">Source Name</string>
+    <string name="sa_author">Author</string>
+    <string name="sa_title">Title</string>
+    <string name="sa_description">Description</string>
+    <string name="sa_url">Url</string>
+    <string name="sa_urlToImage">Url To Image</string>
+    <string name="sa_publishedAt">Published Article</string>
+    <string name="sa_content">Content</string>
+
+    <string name="sa_image_not_load">Exceptio !  Image NOT load</string>
+
+    <string name="sa_no_default_network">"No default network is currently active"</string>
+    <string name="sa_network_is_not_connected">"Network is not connected"</string>
+    <string name="sa_network_not_available">"Network not available"</string>
+    <string name="sa_network_OK">"Network OK"</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="favorites_add_to">Add to favorites</string>
+    <string name="favorites_remove_from">Remove from favorites</string>
+    <string name="favorites_go_to">Go to favorites</string>
+
+    <string name="favorites_message_item_not_release">This item menu yet not realise</string>
+    <string name="favorites_message_function_not_release">This function yet not realise</string>
+
+    <string name="favorites_items_found">Items found: </string>
+
+    <string name="favorite_article_delete">Deleting an article</string>
+
+    <string name="exception_sqlite">Exception SQLite. The article has not been added to the database.</string>
+
+</resources>

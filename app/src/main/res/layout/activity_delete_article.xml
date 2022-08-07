@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DeleteArticleActivity">
+
+    <TextView
+        android:id="@+id/tv_favorites_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="20"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:hint="author"
+        android:paddingBottom="2dip"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />  <!-- app:layout_constraintHorizontal_bias="0.5" -->
+
+    <TextView
+        android:id="@+id/tv_favorites_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ems="20"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:hint="title"
+        android:paddingBottom="2dip"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_favorites_author"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_favorites_published"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="data_time"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_favorites_title"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_delete_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:onClick="OnClickDeleteArticle"
+        android:text="@string/favorites_remove_from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_favorites_published" /> <!-- android:textColor="#5d5d5d" -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

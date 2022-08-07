@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Новини v.0.048</string>
+    <string name="register">РЕГІСТРАЦІЯ</string>
+    <string name="auth">АВТОРИЗАЦіЯ</string>
+
+    <string name="list_news">Перелік новин</string>
+    <string name="request_news">ОТРИМАТИ НОВИНИ</string>
+    <string name="update_news">ОНОВИТИ НОВИНИ</string>
+
+    <string name="show_article">Перегляд статті</string>
+
+    <string name="sa_source">Джерело</string>
+    <string name="sa_source_id">Id Джерела</string>
+    <string name="sa_source_name">Им`я Джерела</string>
+    <string name="sa_author">Автор</string>
+    <string name="sa_title">Заголовок</string>
+    <string name="sa_description">Опис</string>
+    <string name="sa_url">Адреса статті</string>
+    <string name="sa_urlToImage">Адреса зображення</string>
+    <string name="sa_publishedAt">Дата публікації</string>
+    <string name="sa_content">Зміст</string>
+
+    <string name="sa_image_not_load">Виняток! Не завантажено зображення</string>
+
+    <string name="sa_no_default_network">Жодна мережа за умовчанням наразі не активна</string>
+    <string name="sa_network_is_not_connected">Мережа не підключена</string>
+    <string name="sa_network_not_available">Мережа недоступна</string>
+    <string name="sa_network_OK">Мережа в порядку</string>
+
+    <string name="favorites">Вибране</string>
+    <string name="favorites_add_to">Додати в обране</string>
+    <string name="favorites_remove_from">Видалити з вибраного</string>
+    <string name="favorites_go_to">Перейти до вибраного</string>
+    <string name="favorites_message_item_not_release">Цей пункт меню ще не реалізований</string>
+    <string name="favorites_message_function_not_release">Ця функція ще не реалізована</string>
+    <string name="favorites_items_found">Знайдено елементів: </string>
+
+    <string name="favorite_article_delete">Видалення статті</string>
+
+    <string name="exception_sqlite">Exception SQLite. Стаття до БД не додана.</string>
+
+</resources>
