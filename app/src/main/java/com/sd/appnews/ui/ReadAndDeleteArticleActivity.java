@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -75,11 +76,21 @@ public class ReadAndDeleteArticleActivity extends AppCompatActivity {
     //_________________________________________________________________________
 
     public void OnClickReadArticle(View v) {
-        Intent intent = new Intent(ReadAndDeleteArticleActivity.this, ShowArticleOnWebViewActivity.class);
-        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        intent.putExtra("url", url_article);
+//        Intent intent = new Intent(ReadAndDeleteArticleActivity.this, ShowArticleOnWebViewActivity.class);
+//        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+//        intent.putExtra("url", url_article);
+//
+//        startActivity(intent);
+        openWebPage(url_article);
+    }
+    //_________________________________________________________________________
 
-        startActivity(intent);
+    public void openWebPage(String url) {
+        Uri webpage = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
     //_________________________________________________________________________
 
