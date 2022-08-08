@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.DeleteArticleActivity">
+    tools:context=".ui.ReadAndDeleteArticleActivity">
 
     <TextView
         android:id="@+id/tv_favorites_author"
@@ -55,18 +55,33 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_favorites_title"
         tools:ignore="MissingConstraints" />
 
+
+    <Button
+        android:id="@+id/btn_read_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:onClick="OnClickReadArticle"
+        android:text="@string/favorites_read_original_article"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_favorites_published" /> <!-- android:textColor="#5d5d5d" -->
+
+
     <Button
         android:id="@+id/btn_delete_article"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="124dp"
         android:clickable="true"
         android:onClick="OnClickDeleteArticle"
         android:text="@string/favorites_remove_from"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_favorites_published" /> <!-- android:textColor="#5d5d5d" -->
+        app:layout_constraintTop_toBottomOf="@+id/btn_read_article" /> <!-- android:textColor="#5d5d5d" -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Новости v.0.050</string>
+    <string name="app_name">Новости v.0.052</string>
     <string name="register">РЕГИСТРАЦИЯ</string>
     <string name="auth">АВТОРИЗАЦИЯ</string>
 
@@ -29,13 +29,16 @@
 
     <string name="favorites">Избранное</string>
     <string name="favorites_add_to">Добавить в избранное</string>
+
+        <string name="favorites_read_original_article">Читать статью</string>
+
     <string name="favorites_remove_from">Удалить из избранного</string>
     <string name="favorites_go_to">Перейти в избранное</string>
     <string name="favorites_message_item_not_release">Этот пункт меню еще не реализован</string>
     <string name="favorites_message_function_not_release">Эта функция ещё не реализована</string>
     <string name="favorites_items_found">Найдено элементов: </string>
 
-    <string name="favorite_article_delete">Удаление статьи</string>
+    <string name="favorite_article_read_delete">Читать или Удалить статью</string>
 
     <string name="exception_sqlite">Exception SQLite. Статья в БД не добавлена.</string>
 </resources>

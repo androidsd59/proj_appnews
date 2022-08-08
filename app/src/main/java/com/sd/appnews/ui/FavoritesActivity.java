@@ -9,7 +9,6 @@ package com.sd.appnews.ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.pm.LabeledIntent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -20,10 +19,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 import com.sd.appnews.R;
-import com.sd.appnews.data.Article;
 import com.sd.appnews.data.dbsqlite.DatabaseHelper;
-
-import java.util.HashMap;
 
 public class FavoritesActivity extends AppCompatActivity {
 
@@ -47,7 +43,7 @@ public class FavoritesActivity extends AppCompatActivity {
         articleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(FavoritesActivity.this, DeleteArticleActivity.class);
+                Intent intent = new Intent(FavoritesActivity.this, ReadAndDeleteArticleActivity.class);
                 intent.putExtra("id", id);
 
                 startActivity(intent);

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppNews v.0.050</string>
+    <string name="app_name">AppNews v.0.052</string>
     <string name="register">REGISTRATION</string>
     <string name="auth">AUTHERISATIOIN</string>
 
@@ -29,6 +29,7 @@
 
     <string name="favorites">Favorites</string>
     <string name="favorites_add_to">Add to favorites</string>
+    <string name="favorites_read_original_article">Read original article</string>
     <string name="favorites_remove_from">Remove from favorites</string>
     <string name="favorites_go_to">Go to favorites</string>
 
@@ -37,7 +38,7 @@
 
     <string name="favorites_items_found">Items found: </string>
 
-    <string name="favorite_article_delete">Deleting an article</string>
+    <string name="favorite_article_read_delete">Read or Deleting an article</string>
 
     <string name="exception_sqlite">Exception SQLite. The article has not been added to the database.</string>
 

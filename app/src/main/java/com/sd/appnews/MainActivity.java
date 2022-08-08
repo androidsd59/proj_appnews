@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int PARAMETER_MODE_WORK     = 0;
     private int PARAMETER_MODE_DEBUG    = 1;
-    private int mode_work               = PARAMETER_MODE_WORK;
-//    private int mode_work               = PARAMETER_MODE_DEBUG;
+//    private int mode_work               = PARAMETER_MODE_WORK;
+    private int mode_work               = PARAMETER_MODE_DEBUG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
