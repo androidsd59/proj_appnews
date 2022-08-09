@@ -39,7 +39,7 @@ public class FavoritesActivity extends AppCompatActivity {
         setTitle(R.string.favorites);
 
         header = findViewById(R.id.header);
-        articleList = findViewById(R.id.list);
+        articleList = findViewById(R.id.list_all_source);
         articleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

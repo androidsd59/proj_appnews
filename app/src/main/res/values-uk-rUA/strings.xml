@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Новини v.0.055</string>
+    <string name="app_name">Новини v.0.058</string>
     <string name="register">РЕГІСТРАЦІЯ</string>
     <string name="auth">АВТОРИЗАЦіЯ</string>
 
@@ -39,5 +39,11 @@
     <string name="favorite_article_read_delete">Читати або Видалити статтю</string>
 
     <string name="exception_sqlite">Exception SQLite. Стаття до БД не додана.</string>
+
+    <!-- List of source information of API News
+    Список исходной информации API News
+    -->
+    <string name="api_news_list">Перелік джерел API News</string>
+
 
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppNews v.0.055</string>
+    <string name="app_name">AppNews v.0.058</string>
     <string name="register">REGISTRATION</string>
     <string name="auth">AUTHERISATIOIN</string>
 
@@ -42,4 +42,15 @@
 
     <string name="exception_sqlite">Exception SQLite. The article has not been added to the database.</string>
 
+    <string name="api_news_list">List of API News sources</string>
+    <string name="api_news_list_item_popularity" translatable="false">Popularity</string>
+    <string name="api_news_list_item_published" translatable="false">Published</string>
+    <string name="api_news_list_item_business_us" translatable="false">Business US</string>
+    <string name="api_news_list_item_techcrunch" translatable="false">Techcrunch</string>
+    <string name="api_news_list_item_wall_street_journal" translatable="false">The Wall Street Journal</string>
+
+    <string name="url_source_parameter" translatable="false">url_source</string>
+    <!--
+
+    -->
 </resources>

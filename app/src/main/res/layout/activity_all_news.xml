@@ -20,58 +20,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/list"
+        android:id="@+id/list_all_source"
         android:layout_width="fill_parent"
         android:layout_height="540dp"
         android:scrollbars="vertical"
         app:layout_constraintTop_toBottomOf="@+id/btn_request_news"
         tools:ignore="MissingConstraints" />
-
-    <!--
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="80dp"
-        android:orientation="vertical">
-
-        <ScrollView
-            android:layout_width="409dp"
-            android:layout_height="match_parent"
-            android:scrollbars="horizontal|vertical"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="65dp">
-
-            <LinearLayout
-                android:layout_width="350dp"
-                android:layout_height="800dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView_news"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="70dp"
-                    android:enabled="true"
-                    android:scrollbarAlwaysDrawVerticalTrack="true"
-                    android:scrollbars="vertical"
-                    android:singleLine="false"
-                    android:text="TextView"
-                    android:textAlignment="center"
-                    android:verticalScrollbarPosition="right"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_request_news"
-                    tools:ignore="MissingConstraints" />
-            </LinearLayout>
-        </ScrollView>
-
-    </LinearLayout>
-
-    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,6 +16,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.sd.appnews.ui.ALLNewsActivity;
+import com.sd.appnews.ui.SourceApiNewsActivity;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -86,7 +87,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user)
     {
-        Intent intent_rss = new Intent(MainActivity.this, ALLNewsActivity.class);
+//        Intent intent_rss = new Intent(MainActivity.this, ALLNewsActivity.class);
+//        startActivity(intent_rss);
+
+        Intent intent_rss = new Intent(MainActivity.this, SourceApiNewsActivity.class);
         startActivity(intent_rss);
     }
     //_________________________________________________________________________

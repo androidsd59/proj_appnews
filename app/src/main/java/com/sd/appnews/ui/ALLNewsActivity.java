@@ -46,6 +46,8 @@ public class ALLNewsActivity extends AppCompatActivity {
 
     public ListView             listShortArticles;
 
+    public String               url_source = "";
+
     public ALLNewsActivity() throws JSONException {
     }
     //_________________________________________________________________________
@@ -57,6 +59,11 @@ public class ALLNewsActivity extends AppCompatActivity {
 
         setTitle(R.string.list_news);
 
+        Bundle argBundle = getIntent().getExtras();
+        if (argBundle != null) {
+            url_source = argBundle.getString(getString(R.string.url_source_parameter));
+        }
+
         try {
             infoJsonArray = new InfoJsonArray();
         } catch (JSONException e) {
@@ -65,7 +72,7 @@ public class ALLNewsActivity extends AppCompatActivity {
 
         btn_update = (Button) findViewById(R.id.btn_request_news)  ;
 
-        listShortArticles = (ListView) findViewById(R.id.list);
+        listShortArticles = (ListView) findViewById(R.id.list_all_source);
         listShortArticles.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
@@ -97,8 +104,8 @@ public class ALLNewsActivity extends AppCompatActivity {
 //                //.url("https://newsapi.org/v2/everything?q=tesla&from=2022-07-03&sortBy=publishedAt&apiKey=1aa472aa48684f7aad47a6cc0fd2d388")
 //                .build();
 
-        String url = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=1aa472aa48684f7aad47a6cc0fd2d388";
-
+        //String url = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=1aa472aa48684f7aad47a6cc0fd2d388";
+        String url = url_source;
         Request request = new Request.Builder()
                 .url(url)
                 .build();

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Новости v.0.055</string>
+    <string name="app_name">Новости v.0.058</string>
     <string name="register">РЕГИСТРАЦИЯ</string>
     <string name="auth">АВТОРИЗАЦИЯ</string>
 
@@ -41,4 +41,7 @@
     <string name="favorite_article_read_delete">Читать или Удалить статью</string>
 
     <string name="exception_sqlite">Exception SQLite. Статья в БД не добавлена.</string>
+
+    <string name="api_news_list">Перечень источноков API News</string>
+
 </resources>
